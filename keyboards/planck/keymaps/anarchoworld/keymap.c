@@ -56,7 +56,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
             _,            _,            KC_APP,       SPC,          TAB,                         _,             _,            _,            _,            _,            QK_BOOT),
 
     [SYM]=LAYOUT_planck_mit(
-            KC_TILD,      KC_PERC,      KC_AMPR,      KC_PIPE,      KC_AT,        _,             _,             _,            _,            KC_PAST,      _,            _,
+            KC_TILD,      KC_AMPR,      KC_PERC,      KC_PIPE,      KC_AT,        _,             _,             _,            _,            KC_PAST,      _,            _,
             KC_UNDS,      KC_LCBR,      KC_LBRC,      KC_LPRN,      KC_CIRC,      _,             _,             _,            KC_PMNS,      KC_PPLS,      KC_EQL,       KC_COLN,
             KC_BSLS,      KC_RCBR,      KC_RBRC,      KC_RPRN,      KC_EXLM,      _,             _,             _,            KC_HASH,      _,            _,            _,
             _,            _,            _,            KC_SCLN,      KC_DLR,                      _,             _,            _,            _,            _,            QK_BOOT),
