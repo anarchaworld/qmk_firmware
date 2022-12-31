@@ -28,7 +28,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
             KC_Q,         KC_W,         KC_F,         KC_P,         KC_B,         _,             _,             KC_J,         KC_L,         KC_U,         KC_Y,         QUOT,
             GUI(KC_A),    ALT(KC_R),    CTL(KC_S),    SFT(KC_T),    KC_G,         _,             _,             KC_M,         SFT(KC_N),    CTL(KC_E),    ALT(KC_I),    GUI(KC_O),
             KC_Z,         KC_X,         KC_C,         KC_D,         KC_V,         _,             _,             KC_K,         KC_H,         COMM,         DOT,          SLSH,
-            _,            _,            LT(MOU, ESC), LT(NUM, SPC), LT(NAV, TAB),                _,             LT(FUN, ENT), LT(SYM, BSPC),LT(MED, DEL), _,             _),
+            _,            _,            LT(MOU, ESC), LT(MED, SPC), LT(NAV, TAB),                _,             LT(NUM, ENT), LT(SYM, BSPC),LT(FUN, DEL), _,             _),
 
     [MOU]=LAYOUT_planck_mit(
             _,            _,            _,            _,            _,            _,             _,             KC_AGIN,      KC_PSTE,      KC_COPY,      KC_CUT,       KC_UNDO,
@@ -36,18 +36,23 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
             _,            _,            _,            _,            _,            _,             _,             _,            KC_WH_L,      KC_WH_D,      KC_WH_U,      KC_WH_R,
             QK_BOOT,      _,            _,            _,            _,                           _,             KC_BTN2,      KC_BTN1,      KC_BTN3,      _,            _),
 
-
-    [NUM]=LAYOUT_planck_mit(
-            _,            _,            _,            _,            _,            _,             _,             KC_PSLS,      KC_7,         KC_8,         KC_9,         KC_E,
-            KC_LGUI,      KC_LALT,      KC_LCTL,      KC_LSFT,      _,            _,             _,             KC_PPLS,      KC_4,         KC_5,         KC_6,         KC_EQL,
-            _,            _,            _,            _,            _,            _,             _,             KC_PMNS,      KC_1,         KC_2,         KC_3,         KC_PERC,
-            QK_BOOT,      _,            _,            _,            _,                           _,             KC_ASTR,      KC_0,         DOT,          _,            _),
+    [MED]=LAYOUT_planck_mit(
+            RGB_TOG,      KC_VOLU,      KC_MUTE,      KC_VOLD,      _,            _,             _,             _,            KC_AMPR,      _,            _,            _,
+            KC_LGUI,      KC_LALT,      KC_LCTL,      KC_LSFT,      _,            _,             _,             _,            KC_LPRN,      KC_LBRC,      KC_LCBR,      KC_SCLN,
+            KC_MPLY,      KC_MPRV,      KC_MSTP,      KC_MNXT,      _,            _,             _,             _,            KC_RPRN,      KC_RBRC,      KC_RCBR,      _,
+            QK_BOOT,            _,            _,      _,            _,                           _,             _,            _,            _,            _,            _),
 
     [NAV]=LAYOUT_planck_mit(
             _,            _,            _,            _,            _,            _,             _,             KC_AGIN,      KC_PSTE,      KC_COPY,      KC_CUT,       KC_UNDO,
             KC_LGUI,      KC_LALT,      KC_LCTL,      KC_LSFT,      _,            _,             _,             KC_CAPS,      KC_LEFT,      KC_DOWN,      KC_UP,        KC_RGHT,
             _,            _,            _,            _,            _,            _,             _,             KC_INS,       KC_HOME,      KC_PGDN,      KC_PGUP,      KC_END,
             QK_BOOT,      _,            _,            _,            _,                           _,             ENT,          BSPC,         DEL,          _,            _),
+
+    [NUM]=LAYOUT_planck_mit(
+            KC_E,         KC_7,         KC_8,         KC_9,         KC_PSLS,      _,             _,             _,            _,            _,            _,            _,
+            KC_EQL,       KC_4,         KC_5,         KC_6,         KC_PPLS,      _,             _,             _,            KC_LSFT,      KC_LCTL,      KC_LALT,      KC_LGUI,
+            KC_PERC,      KC_1,         KC_2,         KC_3,         KC_PMNS,      _,             _,             _,            _,            _,            _,            _,
+            _,            _,            KC_ASTR,      KC_0,         DOT,                         _,             _,            _,            _,            _,            _),
 
     [FUN]=LAYOUT_planck_mit(
             KC_F12,       KC_F7,        KC_F8,        KC_F9,        KC_PSCR,      _,             _,             _,            _,            _,            _,            _,
@@ -56,15 +61,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
             _,            _,            KC_APP,       SPC,          TAB,                         _,             _,            _,            _,            _,            QK_BOOT),
 
     [SYM]=LAYOUT_planck_mit(
-            KC_TILD,      KC_PERC,      KC_PIPE,      KC_AMPR,      KC_AT,        _,             _,             _,            _,            KC_PAST,      _,            _,
-            KC_UNDS,      KC_LCBR,      KC_LBRC,      KC_LPRN,      KC_CIRC,      _,             _,             _,            KC_PMNS,      KC_PPLS,      KC_EQL,       KC_COLN,
-            KC_BSLS,      KC_RCBR,      KC_RBRC,      KC_RPRN,      KC_EXLM,      _,             _,             _,            KC_HASH,      _,            _,            _,
-            _,            _,            _,            KC_SCLN,      KC_DLR,                      _,             _,            _,            _,            _,            QK_BOOT),
-
-    [MED]=LAYOUT_planck_mit(
-            _,            _,            _,            _,            _,            _,             _,             _,            _,            _,            _,            _,
-            KC_MPRV,      KC_VOLD,      KC_VOLU,      KC_MNXT,      _,            _,             _,             _,            KC_LSFT,      KC_LCTL,      KC_LALT,      KC_LGUI,
-            _,            _,            RGB_VAD,      RGB_TOG,      _,            _,             _,             _,            _,            _,            _,            _,
-            _,            _,            KC_MSTP,      KC_MPLY,      KC_MUTE,                     _,             _,            _,            _,            _,            QK_BOOT),
+            KC_TILD,      KC_DLR,       KC_PIPE,      KC_AMPR,      KC_AT,        _,             _,             _,            _,            _,            _,            _,
+            KC_EQL,       KC_UNDS,      KC_PPLS,      KC_PMNS,      KC_PERC,      _,             _,             _,            KC_LSFT,      KC_LCTL,      KC_LALT,      KC_LGUI,
+            KC_BSLS,      KC_HASH,      KC_ASTR,      KC_EXLM,      KC_CIRC,      _,             _,             _,            _,            _,            _,            _,
+            _,            _,            _,            KC_COLN,      _,                           _,             _,            _,            _,            _,            QK_BOOT),
 
 };
