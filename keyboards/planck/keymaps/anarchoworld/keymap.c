@@ -7,6 +7,7 @@
 #define FUN     4
 #define SYM     5
 #define MED     6
+#define GME     7
 #define _       KC_NO
 #define ALT(x)  LALT_T((x))
 #define CTL(x)  LCTL_T((x))
@@ -52,10 +53,10 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
             KC_E,         KC_7,         KC_8,         KC_9,         KC_PSLS,      _,             _,             _,            _,            _,            _,            _,
             KC_EQL,       KC_4,         KC_5,         KC_6,         KC_PPLS,      _,             _,             _,            KC_LSFT,      KC_LCTL,      KC_LALT,      KC_LGUI,
             KC_PERC,      KC_1,         KC_2,         KC_3,         KC_PMNS,      _,             _,             _,            _,            _,            _,            _,
-            _,            _,            KC_ASTR,      KC_0,         DOT,                         _,             _,            _,            _,            _,            _),
+            _,            _,            KC_ASTR,      KC_0,         DOT,                         _,             _,            _,            _,            _,            QK_BOOT),
 
     [FUN]=LAYOUT_planck_mit(
-            KC_F12,       KC_F7,        KC_F8,        KC_F9,        KC_PSCR,      _,             _,             _,            _,            _,            _,            _,
+            KC_F12,       KC_F7,        KC_F8,        KC_F9,        KC_PSCR,      _,             _,             _,            _,            _,            _,            TG(GME),
             KC_F11,       KC_F4,        KC_F5,        KC_F6,        KC_SCRL,      _,             _,             _,            KC_LSFT,      KC_LCTL,      KC_LALT,      KC_LGUI,
             KC_F10,       KC_F1,        KC_F2,        KC_F3,        KC_PAUS,      _,             _,             _,            _,            _,            _,            _,
             _,            _,            KC_APP,       SPC,          TAB,                         _,             _,            _,            _,            _,            QK_BOOT),
@@ -65,5 +66,11 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
             KC_EQL,       KC_UNDS,      KC_PPLS,      KC_PMNS,      KC_PERC,      _,             _,             _,            KC_LSFT,      KC_LCTL,      KC_LALT,      KC_LGUI,
             KC_BSLS,      KC_HASH,      KC_ASTR,      KC_EXLM,      KC_CIRC,      _,             _,             _,            _,            _,            _,            _,
             _,            _,            _,            KC_COLN,      _,                           _,             _,            _,            _,            _,            QK_BOOT),
+
+    [GME]=LAYOUT_planck_mit(
+            KC_Q,         KC_W,         KC_F,         KC_P,         KC_B,         _,             _,             KC_J,         KC_L,         KC_U,         KC_Y,         QUOT,
+            KC_A,         KC_R,         KC_S,         KC_T,         KC_G,         _,             _,             KC_M,         KC_N,         KC_E,         KC_I,         KC_O,
+            KC_Z,         KC_X,         KC_C,         KC_D,         KC_V,         _,             _,             KC_K,         KC_H,         COMM,         DOT,          SLSH,
+            _,            _,            ESC,          SPC,          TAB,                         _,             ENT,          BSPC,         DEL,          _,            TG(BASE)),
 
 };
