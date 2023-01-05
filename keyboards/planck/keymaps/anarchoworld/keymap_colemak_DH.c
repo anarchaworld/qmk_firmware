@@ -26,10 +26,10 @@
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     [BASE]=LAYOUT_planck_mit(
-            KC_W,         KC_L,         KC_Y,         KC_P,         KC_B,         _,             _,             KC_Z,         KC_F,         KC_O,         KC_U,         QUOT,
-            GUI(KC_C),    ALT(KC_R),    CTL(KC_S),    SFT(KC_T),    KC_G,         _,             _,             KC_M,         SFT(KC_N),    CTL(KC_E),    ALT(KC_I),    GUI(KC_A),
-            KC_Q,         KC_J,         KC_V,         KC_D,         KC_K,         _,             _,             KC_X,         KC_H,         SLSH,         COMM,         DOT,
-            _,            _,            LT(MOU, ESC), LT(MED, SPC), LT(NAV, KC_SCLN),            _,             LT(NUM, ENT), LT(SYM, BSPC),LT(FUN, TAB), _,            _),
+            KC_Q,         KC_W,         KC_F,         KC_P,         KC_B,         _,             _,             KC_J,         KC_L,         KC_U,         KC_Y,         QUOT,
+            GUI(KC_A),    ALT(KC_R),    CTL(KC_S),    SFT(KC_T),    KC_G,         _,             _,             KC_M,         SFT(KC_N),    CTL(KC_E),    ALT(KC_I),    GUI(KC_O),
+            KC_Z,         KC_X,         KC_C,         KC_D,         KC_V,         _,             _,             KC_K,         KC_H,         COMM,         DOT,          SLSH,
+            _,            _,            LT(MOU, ESC), LT(MED, SPC), LT(NAV, TAB),                _,             LT(NUM, ENT), LT(SYM, BSPC),LT(FUN, DEL), _,             _),
 
     [MOU]=LAYOUT_planck_mit(
             _,            _,            _,            _,            _,            _,             _,             KC_AGIN,      KC_PSTE,      KC_COPY,      KC_CUT,       KC_UNDO,
@@ -39,7 +39,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
     [MED]=LAYOUT_planck_mit(
             RGB_TOG,      KC_VOLU,      KC_MUTE,      KC_VOLD,      _,            _,             _,             _,            KC_AMPR,      _,            _,            _,
-            KC_LGUI,      KC_LALT,      KC_LCTL,      KC_LSFT,      _,            _,             _,             _,            KC_LPRN,      KC_LBRC,      KC_LCBR,      _,
+            KC_LGUI,      KC_LALT,      KC_LCTL,      KC_LSFT,      _,            _,             _,             _,            KC_LPRN,      KC_LBRC,      KC_LCBR,      KC_SCLN,
             KC_MPLY,      KC_MPRV,      KC_MSTP,      KC_MNXT,      _,            _,             _,             _,            KC_RPRN,      KC_RBRC,      KC_RCBR,      _,
             QK_BOOT,            _,            _,      _,            _,                           _,             _,            _,            _,            _,            _),
 
@@ -68,9 +68,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
             _,            _,            _,            KC_COLN,      _,                           _,             _,            _,            _,            _,            QK_BOOT),
 
     [GME]=LAYOUT_planck_mit(
-            KC_W,         KC_L,         KC_Y,         KC_P,         KC_B,         _,             _,             KC_Z,         KC_F,         KC_O,         KC_U,         QUOT,
-            KC_C,         KC_R,         KC_S,         KC_T,         KC_G,         _,             _,             KC_M,         KC_N,         KC_E,         KC_I,         KC_A,
-            KC_Q,         KC_J,         KC_V,         KC_D,         KC_K,         _,             _,             KC_X,         KC_H,         SLSH,         COMM,         DOT,
-            _,            _,            ESC,          SPC,          KC_SCLN,                     _,             ENT,          BSPC,         TAB,          _,            TG(GME)),
+            KC_Q,         KC_W,         KC_F,         KC_P,         KC_B,         _,             _,             KC_J,         KC_L,         KC_U,         KC_Y,         QUOT,
+            KC_A,         KC_R,         KC_S,         KC_T,         KC_G,         _,             _,             KC_M,         KC_N,         KC_E,         KC_I,         KC_O,
+            KC_Z,         KC_X,         KC_C,         KC_D,         KC_V,         _,             _,             KC_K,         KC_H,         COMM,         DOT,          SLSH,
+            KC_LALT,      _,            ESC,          SPC,          TAB,                         _,             ENT,          BSPC,         DEL,          _,            TG(GME)),
 
 };
