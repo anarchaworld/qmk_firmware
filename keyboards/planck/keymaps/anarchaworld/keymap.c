@@ -29,7 +29,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
             KC_W,         KC_L,         KC_Y,         KC_P,         KC_B,         _,             _,             KC_Z,         KC_F,         KC_O,         KC_U,         QUOT,
             GUI(KC_C),    ALT(KC_R),    CTL(KC_S),    SFT(KC_T),    KC_G,         _,             _,             KC_M,         SFT(KC_N),    CTL(KC_E),    ALT(KC_I),    GUI(KC_A),
             KC_Q,         KC_J,         KC_V,         KC_D,         KC_K,         _,             _,             KC_X,         KC_H,         SLSH,         COMM,         DOT,
-            _,            _,            LT(MOU, ESC), LT(MED, SPC), LT(NAV, KC_SCLN),            _,             LT(NUM, ENT), LT(SYM, BSPC),LT(FUN, TAB), _,            _),
+            _,            _,            LT(MOU, TAB), LT(MED, SPC), LT(NAV, KC_SCLN),            _,             LT(NUM, ENT), LT(SYM, BSPC),LT(FUN, ESC), _,            _),
 
     [MOU]=LAYOUT_planck_mit(
             _,            _,            _,            _,            _,            _,             _,             KC_AGIN,      KC_PSTE,      KC_COPY,      KC_CUT,       KC_UNDO,
@@ -71,6 +71,6 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
             KC_W,         KC_L,         KC_Y,         KC_P,         KC_B,         _,             _,             KC_Z,         KC_F,         KC_O,         KC_U,         QUOT,
             KC_C,         KC_R,         KC_S,         KC_T,         KC_G,         _,             _,             KC_M,         KC_N,         KC_E,         KC_I,         KC_A,
             KC_Q,         KC_J,         KC_V,         KC_D,         KC_K,         _,             _,             KC_X,         KC_H,         SLSH,         COMM,         DOT,
-            _,            _,            ESC,          SPC,          KC_SCLN,                     KC_LALT,       ENT,          BSPC,         TAB,          _,            TG(GME)),
+            _,            _,            TAB,          SPC,          KC_SCLN,                     KC_LALT,       ENT,          BSPC,         ESC,          _,            TG(GME)),
 
 };
